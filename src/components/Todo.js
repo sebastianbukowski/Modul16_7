@@ -1,16 +1,16 @@
 import React from 'react';
+import style from './Todo.css';
 
-const ToDo = props => {
-    console.log('element from todo ',props)
-    console.log('props.element.id', props.element.id)
-    console.log('props.element.text', props.element.text)
-    return (
-        <div>
-            <li>{props.element.text}</li>
-            <button onClick={() => props.removeTodo(props.element.id)}>x</button>
-        </div>
-       
-    )
+const Todo = (props) => {
+	console.log('todo props',props)
+	return (
+		<li className={style.Todo}>
+			<a href={'#'}>
+				<p>{props.element.text}</p>
+				<button onClick={() => props.remove(props.todo.id)}>x</button>
+			</a>
+		</li>
+	);
 }
 
-export default ToDo; 
+export default Todo; 

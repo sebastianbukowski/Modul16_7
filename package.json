@@ -1,12 +1,11 @@
 {
-  "name": "Modul16_6",
+  "name": "Modul16_7",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "run-p start:*",
-    "start:webpack": "webpack-dev-server --hot --env development",
-    "start:webpack-server": "webpack-dev-server --open",
+    "start:webpack": "webpack-dev-server --hot --env development --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --env production"
   },

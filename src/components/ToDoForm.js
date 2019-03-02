@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './TodoForm.css'
 
 class ToDoForm extends React.Component {
     constructor(props){
@@ -25,7 +26,7 @@ class ToDoForm extends React.Component {
 
     render () {
         return (
-            <form onSubmit={this.handleSubmit} >
+            <form onSubmit={this.handleSubmit} className={style.TodoForm} >
                 <label>
                     Treść listy
                 </label>

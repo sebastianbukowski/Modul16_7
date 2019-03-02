@@ -1,10 +1,10 @@
 import React from 'react';
 import uuid from 'uuid';
-import style from './App.css';
 import ToDoList from '../components/ToDoList'
 import ToDoForm from '../components/ToDoForm'
 import Title from '../components/Title'
 import { hot } from 'react-hot-loader';
+import style from './App.css';
 
 class App extends React.Component {
     constructor(props){
@@ -43,7 +43,7 @@ class App extends React.Component {
     render =() => {
         return (
             <div className={style.TodoApp}>
-                <Title title={this.state.title} />
+                <Title title={this.state.title} number={this.state.data.length} />
                 <ToDoForm add={this.addTodo}/>
                 <ToDoList data={this.state.data} remove={this.removeTodo}/>
             </div>
