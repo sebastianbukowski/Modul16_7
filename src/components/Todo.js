@@ -7,7 +7,7 @@ const Todo = (props) => {
 		<li className={style.Todo}>
 			<a href={'#'}>
 				<p>{props.element.text}</p>
-				<button onClick={() => props.remove(props.todo.id)}>x</button>
+				<button onClick={() => props.removeTodo(props.element.id)}>x</button>
 			</a>
 		</li>
 	);
